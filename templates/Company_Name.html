@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company_Name Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Company_Name Data from Database</h2>
+    <table>
+        <thead>
+            <tr>		
+			
+
+                <th>Company Name</th>
+                <th>Total_Serials</th>
+                <th>Min_Serial</th>
+                <th>Max_Serial</th>
+                <th>Serial_Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data4 %}
+            <tr>
+                <td>{{ i[0] }}</td>  <!-- Use your actual column name -->
+                <td>{{ i[1] }}</td>  <!-- Modify this as per your SQL columns -->
+                <td>{{ i[2] }}</td>  <!-- Modify this as per your SQL columns -->
+                <td>{{ i[3] }}</td>  <!-- Modify this as per your SQL columns -->
+                <td>{{ i[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <br>
+        <br>
+        
+    </table>
+</body>
+</html>
+ Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pincodewise Data from Database</h2>
+    <table>
+        <thead>
+            <tr>	Pincode	Total_Serials	Min_Serial	Max_Serial
+			
+
+                <th>Pincode</th>
+                <th>Total_Serials</th>
+                <th>Min_Serial</th>
+                <th>Max_Serial</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data2 %}
+            <tr>
+                <td>{{ i[0] }}</td>  <!-- Use your actual column name -->
+                <td>{{ i[1] }}</td>  <!-- Modify this as per your SQL columns -->
+                <td>{{ i[2] }}</td>  <!-- Modify this as per your SQL columns -->
+                <td>{{ i[3] }}</td>  <!-- Modify this as per your SQL columns -->
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+        <br>
+        <br>
+        
+    </table>
+</body>
+</html>
